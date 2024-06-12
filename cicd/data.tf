@@ -1,4 +1,6 @@
+
 data "aws_ami" "ami_info" {
+
   most_recent = true
   owners = ["973714476881"]
 
@@ -19,12 +21,13 @@ data "aws_ami" "ami_info" {
 }
 
 data "aws_ami" "nexus_ami_info" {
+
   most_recent = true
-  owners = ["852699756283"]
+  owners = ["679593333241"]
 
   filter {
     name   = "name"
-    values = ["redhat-nexus-*"]
+    values = ["SolveDevOps-Nexus-Server-Ubuntu20.04-20240511-*"]
   }
 
   filter {
@@ -37,4 +40,3 @@ data "aws_ami" "nexus_ami_info" {
     values = ["hvm"]
   }
 }
-
