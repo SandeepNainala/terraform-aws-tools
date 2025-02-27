@@ -1,4 +1,3 @@
-/*
 module "jenkins" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
@@ -97,4 +96,4 @@ module "records" {
     }
 
   ]
-}*/
+}
